@@ -9,10 +9,15 @@
     width: 800px;
     background: #09024b;
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
+    grid-template-columns:repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
-
+    /* grid-auto-flow: row; defecto*/
+    grid-auto-flow:column; /*el orden, puede ser column or row*/
+    /* dense rellena automáticamente los espacios vacios, se combina con row dense o column dense */
+    /* grid-auto-flow:column dense; */
+    grid-auto-columns: 200px; /*tamaño para elementos que se salen de la cuadricula*/
+    grid-auto-rows: 200px;
 }
  
 [class^="item"]{
