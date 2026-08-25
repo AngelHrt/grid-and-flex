@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 600px;
+    width: 800px;
+    background: #09024b;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+}
+ 
+[class^="item"]{
+    color: #f5e9e9;
+    font-size: 30px;
+    text-align: center;
+}
+
+.item1{
+    background: orange;
+}
+
+.item2{
+    background: greenyellow;
+}
+
+.item3{
+    background: skyblue;
+}
+
+.item4{
+    background: red;
+}
+
+.item5{
+    background: red;
+}
+
+.item6{
+    background: skyblue;
+}
+
+.item8{
+    background: orange;
+}
+
+.item7{
+    background: greenyellow;
+}
+
