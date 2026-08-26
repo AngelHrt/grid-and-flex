@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    height: 600px;
+    width: 800px;
+    border:5px solid #09024b;
+    margin-left: 50px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    justify-items: stretch;
+
+    /*
+    start al inicio
+    center al medio
+    end al final 
+    stretch todo el ancho
+    */
+    /* align-items: center; */
+}
+ 
+[class^="item"]{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* todos los hijos o items del contenedor tienen order 0 como default, es más sutil para los media querys */
+
+.item1{
+    background: orange;
+    order: 1;
+}
+
+.item2{
+    background: greenyellow;
+    order: 2;
+}
+
+.item3{
+    background: skyblue;
+}
+.item4{
+    background: red;
+}
