@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 400px;
+    max-width: 600px;
+    height: 500px;
+    outline: 2px solid crimson;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background: darkcyan;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 80px;
+    
+    /* flex: 1; */
+    /* flex-grow: 1; factor de crecimiento */
+    /* flex-shrink: 1; factor de reducción */
+    /* flex-basis: 1; factor de crecimiento */
+    /* flex: 0 1 auto; forma reducida 
+           grow shrink basis */
+    
+}
+
+.item1{
+    background-color: aquamarine;
+    /* align-self: flex-end; lo mismo que align-items pero para elementos*/
+}
+
+.item2{
+    background-color: cornflowerblue;
+    /* margin-left: auto;  */
+    /*agrega todo un margen y empuja al elemento*/
+    margin: auto;
+
+}
+
+.item3{
+    background-color: orange;
+}
+
+.item4{
+    background-color: purple;
+}
