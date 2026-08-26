@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid; */
+}
+
+body{
+    min-height: 100vh;
+    background: #f2f2f2;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.social {
+  flex: 1;
+  margin-bottom: 15px;
+  /* justify-items: flex-start; */
+}
+
+.twitter{
+    width: 25px;
+    margin-bottom: 25px;
+}
+
+.title{
+    font-size: 16px;
+}
+
+.paragraph{
+    font-size: 13px;
+    color: grey;
+}
+
+.paragraph2{
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 14px;
+
+}
+
+.paragraph2 span{
+    color: rgb(57, 141, 214);
+}
