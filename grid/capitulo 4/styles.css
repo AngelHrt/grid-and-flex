@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    height: 600px;
+    width: 600px;
+    background: #09024b;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    /*autofit ajusta la cantidad de elementos*/
+
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    a */
+    /*grid-template-columns: repeat(auto-fill, 100px);*/ /*auto-fill, crea tantos como puede, si mide 800, crea 8 de 100  */
+
+    /* grid-template-columns: repeat(3,minmax(min-content, max-content)); */
+}
+ 
+[class^="item"]{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.item1{
+    background: orange;
+}
+
+.item2{
+    background: greenyellow;
+}
+
+.item3{
+    background: skyblue;
+}
+
