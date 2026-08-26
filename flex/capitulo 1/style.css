@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 400px;
+    max-width: 600px;
+    height: 500px;
+    outline: 2px solid crimson;
+    margin: 20px auto;
+    display: flex;
+    /* flex-direction: column; puede ser row o column */
+    
+    /*flex-wrap: wrap-reverse; reverse cambia la posicion*/
+    
+    /* flex-wrap: wrap; crea nueva linea si el tamaño es superado*/
+    /* flex-wrap: nowrap; es el default, adapta tamaño*/
+    
+    /*flex-flow: column wrap; version abreviada de direction wrap*/
+
+    /* flex-direction: row; */
+
+    /* justify-content: center;  */
+    /*alinea horizontalmente start end center*/
+    /*space-between espacio entre ellos*/
+    /*space-around espacio entre ellos y bordes*/
+    /*space-evenly espacio igual entre ellos y bordes*/
+
+    /* align-items: baseline; stretch -> estirar */
+
+    flex-wrap: wrap;
+    align-content: space-between;
+
+}
+
+.item{
+    width: 300px;
+    height: 80px;
+    background: darkcyan;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 100px;
+}
+
+.item1{
+    background-color: aquamarine;
+}
+
+.item2{
+    background-color: cornflowerblue;
+}
+
+.item3{
+    background-color: orange;
+}
+
+.item4{
+    background-color: purple;
+}
