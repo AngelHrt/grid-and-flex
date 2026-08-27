@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+}
+
+
+/* CONTENEDOR */
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #191825;
+
+    /* Cuadrícula del fondo */
+    background-image:
+        linear-gradient(#292838 1px, transparent 1px),
+        linear-gradient(90deg, #292838 1px, transparent 1px);
+
+    background-size: 32px 32px;
+}
+
+
+/* CARD */
+
+.card {
+    width: 285px;
+    min-height: 363px;
+
+    padding: 30px;
+
+    background: #fff;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* TITULO */
+
+.title {
+    align-self:flex-start;
+
+    padding: 5px 10px;
+
+    border-radius: 4px;
+
+    background: #f0e5ff;
+    color: #6925d5;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/* PRECIO */
+
+.price {
+    display: flex;
+    align-items: baseline;
+
+    color: #30304a;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+.simbol {
+    font-size: 18px;
+    font-weight: 500;
+
+    margin-right: 2px;
+}
+
+.month {
+    font-size: 10px;
+    font-weight: 400;
+
+    color: #44445a;
+
+    margin-left: 2px;
+}
+
+
+/* DESCRIPCION */
+
+.text {
+    max-width: 220px;
+
+    color: #777783;
+
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* LISTA */
+
+.list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 2px;
+}
+
+
+.item {
+    position: relative;
+
+    padding-left: 22px;
+
+    color: #63727d;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+/* CIRCULO DEL CHECK */
+
+.item::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 14px;
+    height: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1.5px solid #7b36d9;
+    border-radius: 50%;
+
+    color: #7b36d9;
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+
+/* BOTON */
+
+button {
+    width: 100%;
+    height: 36px;
+
+    margin-top: auto;
+
+    border: none;
+    border-radius: 3px;
+
+    background: #5d20d5;
+    color: white;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5018bd;
+}
